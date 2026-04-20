@@ -41,22 +41,38 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-6 lg:gap-8 md:flex">
           {NAV.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-ink transition-colors hover:text-terracotta"
+              className="whitespace-nowrap text-sm font-medium text-ink transition-colors hover:text-terracotta"
             >
               {item.label}
             </Link>
           ))}
-          <Link
-            href="/contact"
-            className="inline-flex items-center rounded-full bg-terracotta px-5 py-2.5 text-sm font-semibold text-ivory shadow-sm transition hover:bg-terracotta-deep"
+          <a
+            href="https://www.locallygrown.app/seven-seasons-farm"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-terracotta px-5 py-2.5 text-sm font-semibold text-ivory shadow-sm transition hover:bg-terracotta-deep"
           >
-            Call the Farm
-          </Link>
+            Shop Online
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden
+            >
+              <path d="M7 17L17 7" />
+              <path d="M8 7h9v9" />
+            </svg>
+          </a>
         </nav>
 
         <button
@@ -105,13 +121,29 @@ export function SiteHeader() {
               </li>
             ))}
             <li className="pt-3">
-              <Link
-                href="/contact"
+              <a
+                href="https://www.locallygrown.app/seven-seasons-farm"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="inline-flex w-full items-center justify-center rounded-full bg-terracotta px-5 py-3 text-sm font-semibold text-ivory"
+                className="inline-flex w-full items-center justify-center gap-1.5 rounded-full bg-terracotta px-5 py-3 text-sm font-semibold text-ivory"
               >
-                Call 919-389-2290
-              </Link>
+                Shop Online
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden
+                >
+                  <path d="M7 17L17 7" />
+                  <path d="M8 7h9v9" />
+                </svg>
+              </a>
             </li>
           </ul>
         </nav>

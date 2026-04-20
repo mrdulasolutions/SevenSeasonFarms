@@ -62,8 +62,8 @@ export default function Home() {
               icon: "✓",
             },
             {
-              title: "Vine-ripened, always",
-              body: "No synthetic pesticides. Nothing harvested before it&rsquo;s ready. If we wouldn&rsquo;t feed it to our kids, it&rsquo;s not for sale.",
+              title: "Pasture-raised, always",
+              body: "24/7 clean pasture, locally-grown non-GMO grain, and gentle machine milking. Cows raised with care give milk worth drinking.",
               icon: "🌿",
             },
           ].map((item) => (

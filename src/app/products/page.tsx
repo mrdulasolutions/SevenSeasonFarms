@@ -1,6 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow, Section } from "@/components/Section";
+import { ProductCarousel } from "@/components/ProductCarousel";
+import { PickupLocations } from "@/components/PickupLocations";
+import { ValueCalculator } from "@/components/ValueCalculator";
+import { Reviews } from "@/components/Reviews";
 
 export const metadata = {
   title: "Products",
@@ -13,8 +16,7 @@ const PRODUCTS = [
     slug: "fresh-milk",
     name: "Fresh Milk",
     tagline: "A2A2 · Jersey herd · Pasture-raised",
-    image: "/images/product-1.jpg",
-    image2: "/images/product-2.jpg",
+    images: ["/images/product-2.jpg", "/images/product-1.jpg"],
     description:
       "Creamy, fresh milk from our pasture-raised A2A2 Jersey herd. Rich in natural flavor and easier to digest, our milk comes straight from happy cows grazing on lush pastures. Perfect for drinking, cooking, or making your own dairy creations at home.",
     details: [
@@ -33,8 +35,7 @@ const PRODUCTS = [
     slug: "fresh-buttermilk",
     name: "Fresh Buttermilk",
     tagline: "Cultured · Probiotic · Traditional",
-    image: "/images/product-3.jpg",
-    image2: null,
+    images: ["/images/product-3.jpg"],
     description:
       "Discover the tangy, creamy goodness of our Fresh Buttermilk — carefully cultured with live probiotic cultures to deliver authentic flavor and nutrition in every pour. Rich and thick, this traditional buttermilk is perfect for baking fluffy pancakes and tender biscuits, or enjoying straight from the glass.",
     details: [
@@ -78,28 +79,7 @@ export default function ProductsPage() {
                 i % 2 === 1 ? "md:[&>div:first-child]:order-2" : ""
               }`}
             >
-              <div className="grid gap-4 md:grid-cols-[2fr_1fr]">
-                <div className="relative aspect-square overflow-hidden rounded-3xl bg-forest-deep/5">
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 40vw"
-                    className="object-cover"
-                  />
-                </div>
-                {product.image2 && (
-                  <div className="relative hidden aspect-square overflow-hidden rounded-3xl bg-forest-deep/5 md:block">
-                    <Image
-                      src={product.image2}
-                      alt={`${product.name} half gallon`}
-                      fill
-                      sizes="20vw"
-                      className="object-cover"
-                    />
-                  </div>
-                )}
-              </div>
+              <ProductCarousel images={product.images} alt={product.name} />
 
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-terracotta">
@@ -179,6 +159,41 @@ export default function ProductsPage() {
             </article>
           ))}
         </div>
+      </Section>
+
+      {/* Value calculator — is fresh milk worth it? */}
+      <section className="bg-forest-deep text-ivory" id="value">
+        <Section>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-wheat">
+              Is fresh milk worth it?
+            </p>
+            <h2 className="mt-4 font-display text-4xl leading-tight md:text-5xl">
+              Do the math.{" "}
+              <span className="italic text-wheat">Not the pitch.</span>
+            </h2>
+            <p className="mx-auto mt-5 max-w-xl text-ivory/80">
+              A gallon of fresh milk is more than a gallon of milk. Move the
+              sliders — we&rsquo;ll show you what else is in the jug and
+              what it costs to replace at the store.
+            </p>
+          </div>
+          <div className="mt-12">
+            <ValueCalculator />
+          </div>
+        </Section>
+      </section>
+
+      {/* Social proof */}
+      <section className="bg-cream-soft">
+        <Section>
+          <Reviews />
+        </Section>
+      </section>
+
+      {/* Pickup locations */}
+      <Section id="pickup" className="!pt-4">
+        <PickupLocations />
       </Section>
 
       {/* Notes */}

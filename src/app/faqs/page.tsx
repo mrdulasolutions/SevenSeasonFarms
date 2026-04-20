@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Eyebrow, Section } from "@/components/Section";
+import { PickupLocations } from "@/components/PickupLocations";
 
 export const metadata = {
   title: "FAQs",
@@ -234,6 +235,26 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     ),
   },
   {
+    q: "Where and when can I pick up?",
+    a: (
+      <>
+        <p>
+          We do on-farm pickup plus drop points across the Triangle — Wake
+          Forest, Raleigh (North Hills), Cary, Youngsville, and Fuquay-Varina.
+          Saturday pickups happen at the Wake Forest Farmer&rsquo;s Market and
+          The Forks Cafeteria in Wake Forest. See the full schedule on the{" "}
+          <Link
+            href="/products#pickup"
+            className="text-terracotta underline hover:text-terracotta-deep"
+          >
+            Products page
+          </Link>{" "}
+          or call us to arrange something.
+        </p>
+      </>
+    ),
+  },
+  {
     q: "Do you have milk available daily?",
     a: (
       <p>
@@ -324,6 +345,12 @@ export default function FAQsPage() {
           </ul>
         </div>
       </Section>
+
+      <section className="bg-cream-soft">
+        <Section>
+          <PickupLocations />
+        </Section>
+      </section>
     </>
   );
 }
