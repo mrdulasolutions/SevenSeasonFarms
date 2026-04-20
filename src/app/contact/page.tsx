@@ -4,22 +4,22 @@ import { ContactForm } from "@/components/ContactForm";
 export const metadata = {
   title: "Contact",
   description:
-    "Get in touch with Seven Seasons Farm — call 919-389-2290 or send a message. Located in Oxford, NC.",
+    "Get in touch with Seven Seasons Farm. Call 919-389-2290 or send a message. Located in Oxford, NC.",
 };
 
 export default function ContactPage() {
   return (
     <>
       <section className="bg-cream-soft">
-        <div className="mx-auto max-w-4xl px-5 py-20 text-center md:px-8 md:py-28">
+        <div className="mx-auto max-w-5xl px-5 py-20 text-center md:px-8 md:py-28">
           <Eyebrow>Get in touch</Eyebrow>
-          <h1 className="mt-5 font-display text-5xl leading-tight text-forest-deep md:text-7xl">
+          <h1 className="mt-5 font-display text-[2.25rem] leading-tight text-forest-deep md:whitespace-nowrap md:text-6xl">
             We&rsquo;d love to{" "}
             <span className="italic text-terracotta">hear from you.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-ink-soft">
             Thank you for your interest in our farm. Ask a question, check
-            availability, or just say hello — we try to respond to calls and
+            availability, or just say hello. We try to respond to calls and
             emails the same day.
           </p>
         </div>
@@ -42,7 +42,7 @@ export default function ContactPage() {
               </p>
               <p className="mt-3 text-ivory/80">
                 Call to check product availability. If we don&rsquo;t answer,
-                leave a message — we&rsquo;ll get back to you as soon as we
+                leave a message. We&rsquo;ll get back to you as soon as we
                 can.
               </p>
             </div>
@@ -71,7 +71,7 @@ export default function ContactPage() {
 
             <p className="text-sm text-ink-soft">
               If you haven&rsquo;t heard back from us within 24 hours, check
-              your spam folder — our replies sometimes land there.
+              your spam folder. Our replies sometimes land there.
             </p>
           </div>
 

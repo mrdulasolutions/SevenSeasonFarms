@@ -11,11 +11,11 @@ export default function ConsultingPage() {
   return (
     <>
       <section className="bg-forest text-ivory">
-        <div className="mx-auto max-w-4xl px-5 py-20 text-center md:px-8 md:py-28">
+        <div className="mx-auto max-w-5xl px-5 py-20 text-center md:px-8 md:py-28">
           <Eyebrow>
             <span className="text-wheat">Consulting</span>
           </Eyebrow>
-          <h1 className="mt-6 font-display text-5xl leading-tight md:text-7xl">
+          <h1 className="mt-6 font-display text-[2.25rem] leading-tight md:whitespace-nowrap md:text-6xl">
             We&rsquo;ve been there.{" "}
             <span className="italic text-wheat">We&rsquo;ll help.</span>
           </h1>
@@ -32,7 +32,7 @@ export default function ConsultingPage() {
           <article className="prose-farm max-w-none">
             <p className="font-display text-2xl leading-snug text-forest-deep">
               When you start a farm or homestead, you immediately have to wear
-              multiple hats. You&rsquo;re more than a farmer — you&rsquo;re a
+              multiple hats. You&rsquo;re more than a farmer. You&rsquo;re a
               livestock nutritionist, a veterinarian, an electrician, a
               plumber, a carpenter. You have to get comfortable with all of
               it, unless you&rsquo;re independently wealthy and can hire it
@@ -69,7 +69,7 @@ export default function ConsultingPage() {
               </div>
               <p className="mt-4 text-ink-soft">
                 From the comfort of your living room. Up to one hour discussing
-                your farm — whatever questions you&rsquo;ve got, we&rsquo;ll
+                your farm. Whatever questions you&rsquo;ve got, we&rsquo;ll
                 bring what we know.
               </p>
               <Link
@@ -118,7 +118,7 @@ export default function ConsultingPage() {
               },
               {
                 title: "Raw-milk dairying",
-                body: "From milking routine to cooling to RAWMI standards — the real cost and rhythm of a small dairy.",
+                body: "From milking routine to cooling to RAWMI standards. The real cost and rhythm of a small dairy.",
               },
               {
                 title: "Land &amp; setup",
@@ -134,7 +134,7 @@ export default function ConsultingPage() {
               },
               {
                 title: "Starting out",
-                body: "What we wish we&rsquo;d known day one — and the mistakes we made so you can skip them.",
+                body: "What we wish we&rsquo;d known day one, and the mistakes we made so you can skip them.",
               },
             ].map((topic) => (
               <div

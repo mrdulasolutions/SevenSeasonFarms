@@ -41,14 +41,14 @@ export const PICKUPS: Pickup[] = [
     times: ["Wednesday 6:30–6:45 PM"],
   },
   {
-    name: "North Hills — Bloom Family Wellness",
+    name: "North Hills (Bloom Family Wellness)",
     address: "3948 Browning Pl",
     city: "Raleigh, NC",
     zip: "27609",
     times: ["Tuesday 1:15–1:20 PM"],
   },
   {
-    name: "Cary — Well One Collective",
+    name: "Cary (Well One Collective)",
     address: "114 Brady Ct",
     city: "Cary, NC",
     zip: "27511",

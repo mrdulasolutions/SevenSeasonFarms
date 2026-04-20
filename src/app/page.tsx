@@ -27,7 +27,7 @@ export default function Home() {
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ivory/85">
             We&rsquo;re Chad &amp; Chrissy Wilkins. We raise A2A2 Jersey cows
-            and grow food the way our grandparents did — slow, clean, and with
+            and grow food the way our grandparents did. Slow, clean, and with
             a whole lot of care. Welcome to our little corner of North Carolina.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -53,7 +53,7 @@ export default function Home() {
           {[
             {
               title: "100% A2A2 herd",
-              body: "Every cow on our farm tested A2A2 — the easier-to-digest beta casein.",
+              body: "Every cow on our farm tested A2A2, the easier-to-digest beta casein.",
               icon: "🐄",
             },
             {
@@ -103,7 +103,7 @@ export default function Home() {
             </p>
             <p className="mt-4 text-lg leading-relaxed text-ink-soft">
               We&rsquo;re not just looking for customers. We&rsquo;re looking
-              to build relationships — we want to know you, feed you well, and
+              to build relationships. We want to know you, feed you well, and
               hear what you think.
             </p>
             <Link

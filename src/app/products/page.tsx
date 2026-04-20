@@ -21,7 +21,7 @@ const PRODUCTS = [
       "Creamy, fresh milk from our pasture-raised A2A2 Jersey herd. Rich in natural flavor and easier to digest, our milk comes straight from happy cows grazing on lush pastures. Perfect for drinking, cooking, or making your own dairy creations at home.",
     details: [
       "100% A2A2 Jersey herd",
-      "RAWMI Listed — tested weekly",
+      "RAWMI Listed, tested weekly",
       "Bottled within hours of milking",
       "Cooled to under 40°F in a tank approved for raw milk",
     ],
@@ -37,11 +37,11 @@ const PRODUCTS = [
     tagline: "Cultured · Probiotic · Traditional",
     images: ["/images/product-3.jpg"],
     description:
-      "Discover the tangy, creamy goodness of our Fresh Buttermilk — carefully cultured with live probiotic cultures to deliver authentic flavor and nutrition in every pour. Rich and thick, this traditional buttermilk is perfect for baking fluffy pancakes and tender biscuits, or enjoying straight from the glass.",
+      "Discover the tangy, creamy goodness of our Fresh Buttermilk, carefully cultured with live probiotic cultures to deliver authentic flavor and nutrition in every pour. Rich and thick, this traditional buttermilk is perfect for baking fluffy pancakes and tender biscuits, or enjoying straight from the glass.",
     details: [
       "Cultured in small batches",
       "Live probiotics for digestive health",
-      "Rich, thick texture — the way buttermilk should be",
+      "Rich, thick texture, the way buttermilk should be",
       "From the same A2A2 Jersey herd as our fresh milk",
     ],
     sizes: ["Half Gallon"],
@@ -56,14 +56,14 @@ export default function ProductsPage() {
   return (
     <>
       <section className="bg-cream-soft">
-        <div className="mx-auto max-w-5xl px-5 py-20 text-center md:px-8 md:py-28">
+        <div className="mx-auto max-w-6xl px-5 py-20 text-center md:px-8 md:py-28">
           <Eyebrow>What we make</Eyebrow>
-          <h1 className="mt-5 font-display text-5xl leading-tight text-forest-deep md:text-7xl">
+          <h1 className="mt-5 font-display text-[2.25rem] leading-tight text-forest-deep md:whitespace-nowrap md:text-6xl">
             From our herd{" "}
             <span className="italic text-terracotta">to your home.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-ink-soft">
-            Every bottle starts in the same 30-gallon tank — cooled in an hour,
+            Every bottle starts in the same 30-gallon tank, cooled in an hour,
             filtered clean, and labeled with care. Two products, one standard:
             good enough for our kids first.
           </p>
@@ -161,7 +161,7 @@ export default function ProductsPage() {
         </div>
       </Section>
 
-      {/* Value calculator — is fresh milk worth it? */}
+      {/* Value calculator: is fresh milk worth it? */}
       <section className="bg-forest-deep text-ivory" id="value">
         <Section>
           <div className="mx-auto max-w-3xl text-center">
@@ -174,7 +174,7 @@ export default function ProductsPage() {
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-ivory/80">
               A gallon of fresh milk is more than a gallon of milk. Move the
-              sliders — we&rsquo;ll show you what else is in the jug and
+              sliders, we&rsquo;ll show you what else is in the jug and
               what it costs to replace at the store.
             </p>
           </div>
@@ -205,7 +205,7 @@ export default function ProductsPage() {
                 Herd share vs. pet milk
               </h3>
               <p className="mt-3 text-ink-soft">
-                The milk is identical — same tank, same cows, same day. The
+                The milk is identical. Same tank, same cows, same day. The
                 only difference is the label and the lid color. Herd shares let
                 you own a small piece of the herd, which is how raw milk is
                 legally obtained for human consumption in NC. Pet milk is
@@ -229,7 +229,7 @@ export default function ProductsPage() {
                 </li>
                 <li>
                   <strong className="text-forest-deep">Pick a pickup spot.</strong>{" "}
-                  On-farm or a Triangle drop point — we&rsquo;ll work out a
+                  On-farm or a Triangle drop point. We&rsquo;ll work out a
                   schedule that fits.
                 </li>
                 <li>

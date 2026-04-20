@@ -202,7 +202,7 @@ export function ValueCalculator() {
             <ValueRow
               icon="🧈"
               title="Homemade butter"
-              sub={`From the cream — ~${BUTTER_LB_PER_GAL} lb per gallon`}
+              sub={`From the cream. About ${BUTTER_LB_PER_GAL} lb per gallon`}
               value={butterValue}
               active={makeButter}
             />
@@ -379,7 +379,7 @@ function ValueRow({
           active ? "text-forest-deep" : "text-ink-soft"
         }`}
       >
-        {active ? `−${currency(value)}` : "—"}
+        {active ? `−${currency(value)}` : "·"}
       </p>
     </li>
   );

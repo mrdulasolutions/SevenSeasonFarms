@@ -24,7 +24,7 @@ export function ProductCarousel({
           <Image
             key={src}
             src={src}
-            alt={idx === 0 ? alt : `${alt} — view ${idx + 1}`}
+            alt={idx === 0 ? alt : `${alt}, view ${idx + 1}`}
             fill
             sizes="(max-width: 768px) 100vw, 45vw"
             className={`object-cover transition-opacity duration-500 ${

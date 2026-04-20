@@ -38,8 +38,8 @@ export function ContactForm() {
           Thank you!
         </p>
         <p className="mt-3 text-ink-soft">
-          Your message is on its way. We&rsquo;ll be in touch within 24 hours —
-          check your spam folder if you don&rsquo;t see a reply.
+          Your message is on its way. We&rsquo;ll be in touch within 24 hours.
+          Check your spam folder if you don&rsquo;t see a reply.
         </p>
       </div>
     );

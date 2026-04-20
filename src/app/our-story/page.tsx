@@ -18,7 +18,7 @@ const STATS = [
 export default function OurStoryPage() {
   return (
     <>
-      {/* HERO — photo-forward split */}
+      {/* HERO: photo-forward split */}
       <section className="relative isolate overflow-hidden bg-forest-deep text-ivory">
         <Image
           src="/images/product-2.jpg"
@@ -34,12 +34,12 @@ export default function OurStoryPage() {
             <Eyebrow>
               <span className="text-wheat">Our Story</span>
             </Eyebrow>
-            <h1 className="mt-6 font-display text-5xl leading-[1.05] md:text-7xl">
+            <h1 className="mt-6 font-display text-[2.25rem] leading-[1.05] md:whitespace-nowrap md:text-6xl">
               Roots in this dirt,{" "}
               <span className="italic text-wheat">decades deep.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-ivory/85">
-              Chad &amp; Chrissy Wilkins — raising A2A2 Jersey cows, growing
+              Chad &amp; Chrissy Wilkins, raising A2A2 Jersey cows, growing
               clean food, and building a farm the way our grandparents would
               recognize.
             </p>
@@ -81,13 +81,13 @@ export default function OurStoryPage() {
         <div className="grid gap-10 md:grid-cols-2 md:gap-14">
           <article className="relative overflow-hidden rounded-3xl bg-cream-soft p-8 ring-1 ring-forest/10 md:p-10">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-terracotta">
-              Chad — the roots
+              Chad, the roots
             </p>
             <h2 className="mt-4 font-display text-3xl leading-tight text-forest-deep md:text-4xl">
               I grew up on this dirt.
             </h2>
             <p className="mt-5 leading-relaxed text-ink-soft">
-              My grandparents taught me this land, one hot summer at a time —
+              My grandparents taught me this land, one hot summer at a time:
               squash, okra, cattle, and more grumbling than I&rsquo;d like to
               admit. Time turned those chores into the memories I value most,
               and now I get to pass the same heritage down to my kids.
@@ -96,13 +96,13 @@ export default function OurStoryPage() {
 
           <article className="relative overflow-hidden rounded-3xl bg-forest p-8 text-ivory ring-1 ring-forest md:p-10">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-wheat">
-              Chrissy — the heart
+              Chrissy, the heart
             </p>
             <h2 className="mt-4 font-display text-3xl leading-tight md:text-4xl">
               She jumped first.
             </h2>
             <p className="mt-5 leading-relaxed text-ivory/85">
-              Chrissy grew up loving agriculture and never outgrew it — the
+              Chrissy grew up loving agriculture and never outgrew it. The
               dreamer, unfazed by a new crop or a stubborn animal. Without her
               &ldquo;ask questions later&rdquo; bravery, we&rsquo;d be in a
               subdivision somewhere. Instead, we&rsquo;re here.
@@ -134,7 +134,7 @@ export default function OurStoryPage() {
         </div>
       </section>
 
-      {/* HOW WE DO IT — icon grid */}
+      {/* HOW WE DO IT: icon grid */}
       <Section>
         <div className="mx-auto max-w-3xl text-center">
           <Eyebrow>How we do it</Eyebrow>
@@ -148,15 +148,15 @@ export default function OurStoryPage() {
           {[
             {
               title: "Happy animals",
-              body: "Animal-welfare-approved facilities. We believe an animal raised with care produces the best nutrition — every time.",
+              body: "Animal-welfare-approved facilities. We believe an animal raised with care produces the best nutrition, every time.",
             },
             {
               title: "No synthetics",
-              body: "No synthetic pesticides on our crops. We don&rsquo;t harvest until it&rsquo;s truly ripe — vine, stem, or otherwise.",
+              body: "No synthetic pesticides on our crops. We don&rsquo;t harvest until it&rsquo;s truly ripe. Vine, stem, or otherwise.",
             },
             {
               title: "Family table first",
-              body: "Everything we sell is food we feed our own kids. The only exceptions are organ meat and pigs&rsquo; feet — we leave those to the experts.",
+              body: "Everything we sell is food we feed our own kids. The only exceptions are organ meat and pigs&rsquo; feet. We leave those to the experts.",
             },
           ].map((item) => (
             <div

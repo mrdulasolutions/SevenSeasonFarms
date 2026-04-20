@@ -17,7 +17,7 @@ export function PickupLocations({
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-ink-soft">
             Pickup is available on the farm or at drop points across the
-            Triangle. Pre-order by phone — milk sells out fast.
+            Triangle. Pre-order by phone. Milk sells out fast.
           </p>
         </div>
       )}
@@ -103,8 +103,8 @@ export function PickupLocations({
           className="font-semibold text-terracotta hover:text-terracotta-deep"
         >
           Call 919-389-2290
-        </a>{" "}
-        — we&rsquo;ll work it out.
+        </a>
+        . We&rsquo;ll work something out.
       </p>
     </div>
   );

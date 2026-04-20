@@ -5,7 +5,7 @@ import { PickupLocations } from "@/components/PickupLocations";
 export const metadata = {
   title: "FAQs",
   description:
-    "Your farm-fresh FAQ guide — raw milk safety, A2A2 genetics, herd shares, RAWMI certification, and more.",
+    "Your farm-fresh FAQ guide. Raw milk safety, A2A2 genetics, herd shares, RAWMI certification, and more.",
 };
 
 const FAQS: { q: string; a: React.ReactNode }[] = [
@@ -13,7 +13,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     q: "What is fresh milk?",
     a: (
       <p>
-        Fresh milk is just that — fresh. It&rsquo;s never cooked, heated, or
+        Fresh milk is just that: fresh. It&rsquo;s never cooked, heated, or
         treated to remove any of its natural goodness. It isn&rsquo;t
         pasteurized or homogenized. It&rsquo;s milk straight from the cow,
         filtered into a jug.
@@ -38,23 +38,24 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     a: (
       <>
         <p>
-          This is a tough one. The only studies on digestibility of A2A2
-          versus A1A1/A1A2 have been conducted on ultra-high-temp pasteurized
-          milk, largely by the A2 Milk Company. Their findings: many people
-          digest A2A2 more easily and with fewer problems. It&rsquo;s a great
-          marketing strategy, really.
+          For a lot of people, yes, and it&rsquo;s the reason we chose to
+          build our herd around it. A2A2 milk doesn&rsquo;t contain the BCM7
+          peptide associated with the A1 beta-casein, and many of our
+          customers tell us it&rsquo;s noticeably easier to digest, especially
+          folks who struggle with typical supermarket milk.
         </p>
         <p>
-          UHT pasteurization is a &ldquo;violent&rdquo; process, and when
-          combined with homogenization, it&rsquo;s possible the protein is
-          altered. There are no studies to prove this.
+          We won&rsquo;t oversell the science. Most published digestibility
+          studies have been on ultra-pasteurized, homogenized milk, not
+          fresh milk like ours, so the research doesn&rsquo;t perfectly
+          match what ends up in your glass. What we can tell you is that our
+          entire herd is 100% tested A2A2, and we built it that way on
+          purpose: it&rsquo;s the gentlest option we could offer, and our
+          family drinks it every day.
         </p>
         <p>
-          Many people swear by A2A2, and in pasteurized/homogenized milk there
-          are tests to back up the benefits. In fresh milk, though, I believe
-          (my opinion) the benefits are largely anecdotal. If not for the
-          push from our customers, I wouldn&rsquo;t seek out A2A2 cows — some
-          of our best cows have been A1A2. But our herd is 100% A2A2.
+          If you&rsquo;ve had trouble with dairy in the past, A2A2 fresh
+          milk is often where people start, and where they stay.
         </p>
       </>
     ),
@@ -69,8 +70,8 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
       <>
         <p>
           RAWMI Listed means we&rsquo;ve been trained and certified by the Raw
-          Milk Institute. There are only 39 raw milk dairies in the world —
-          three in North Carolina — that have gone through this process. RAWMI
+          Milk Institute. There are only 39 raw milk dairies in the world,
+          three in North Carolina, that have gone through this process. RAWMI
           Listed means our milk is tested monthly for coliform bacteria (total
           coliform and E. coli) and total bacteria count. RAWMI standards
           allow no more than 10 CFU of coliform per mL of milk (E. coli must
@@ -94,7 +95,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
           with peace of mind.
         </p>
         <p>
-          RAWMI Listed is not a guarantee on safety — you still need to do
+          RAWMI Listed is not a guarantee on safety. You still need to do
           your own research to decide if fresh milk is right for you and your
           family.
         </p>
@@ -105,7 +106,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     q: "What&rsquo;s the difference between herd share and pet milk?",
     a: (
       <p>
-        The label and the lid color — that&rsquo;s it. We milk every cow the
+        The label and the lid color. That&rsquo;s it. We milk every cow the
         same way, and it all goes into the same 30-gallon tank. When we
         bottle, we figure out how many herd-share gallons are scheduled, use
         white lids and herd-share labels for those, and red lids and pet-milk
@@ -145,7 +146,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
           care, feeding, labor, and bottling. We work with you to pick a pickup
           day each week. One share = one gallon per week. Two shares = two
           gallons, and so on. You pay at the beginning of each month for the
-          entire month. No refunds if you miss a week — we can&rsquo;t
+          entire month. No refunds if you miss a week. We can&rsquo;t
           guarantee makeups, but we&rsquo;ll work with you given enough
           notice.
         </p>
@@ -226,7 +227,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     q: "Can fresh milk be frozen?",
     a: (
       <p>
-        Yes — fresh milk can be frozen and thawed with no impact to flavor.
+        Yes, fresh milk can be frozen and thawed with no impact to flavor.
         However once frozen, the cream sometimes doesn&rsquo;t fully
         reconstitute, meaning you may find little pellets of cream. This
         doesn&rsquo;t happen with goat milk, which is naturally more
@@ -239,7 +240,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     a: (
       <>
         <p>
-          We do on-farm pickup plus drop points across the Triangle — Wake
+          We do on-farm pickup plus drop points across the Triangle: Wake
           Forest, Raleigh (North Hills), Cary, Youngsville, and Fuquay-Varina.
           Saturday pickups happen at the Wake Forest Farmer&rsquo;s Market and
           The Forks Cafeteria in Wake Forest. See the full schedule on the{" "}
@@ -280,7 +281,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
         minerals, and fresh clean water. We supplement forage with
         high-quality grains that keep their body condition up and help them
         produce great milk. The feed is locally sourced, non-GMO whole grain
-        with absolutely no fillers — most of it grown in Warren County, NC.
+        with absolutely no fillers. Most of it grown in Warren County, NC.
       </p>
     ),
   },
@@ -290,9 +291,9 @@ export default function FAQsPage() {
   return (
     <>
       <section className="bg-cream-soft">
-        <div className="mx-auto max-w-4xl px-5 py-20 text-center md:px-8 md:py-28">
+        <div className="mx-auto max-w-5xl px-5 py-20 text-center md:px-8 md:py-28">
           <Eyebrow>Questions &amp; answers</Eyebrow>
-          <h1 className="mt-5 font-display text-5xl leading-tight text-forest-deep md:text-7xl">
+          <h1 className="mt-5 font-display text-[2.5rem] leading-tight text-forest-deep md:whitespace-nowrap md:text-6xl">
             Your farm-fresh{" "}
             <span className="italic text-terracotta">FAQ guide.</span>
           </h1>

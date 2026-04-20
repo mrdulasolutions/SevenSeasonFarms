@@ -18,11 +18,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Seven Seasons Farm — Small Farm, Big Heart. Oxford, NC.",
+    default: "Seven Seasons Farm | Small Farm, Big Heart. Oxford, NC.",
     template: "%s · Seven Seasons Farm",
   },
   description:
-    "Fresh A2A2 milk from our pasture-raised Jersey herd, plus farm consulting. Seven Seasons Farm is a family-run farm in Oxford, North Carolina — RAWMI Listed.",
+    "Fresh A2A2 milk from our pasture-raised Jersey herd, plus farm consulting. Seven Seasons Farm is a family-run farm in Oxford, North Carolina. RAWMI Listed.",
   openGraph: {
     title: "Seven Seasons Farm",
     description:
