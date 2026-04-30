@@ -24,9 +24,9 @@ export async function POST(request: Request) {
     );
   }
 
-  // For now, log to the Vercel function logs. Wire up an email provider
-  // (Resend, Postmark, SendGrid) by setting CONTACT_WEBHOOK_URL and this
-  // handler will forward the submission.
+  // For now, log to Worker logs (visible via `wrangler tail`). Wire up an
+  // email provider (Resend, Postmark, SendGrid) by setting CONTACT_WEBHOOK_URL
+  // as a Worker secret and this handler will forward the submission.
   const webhook = process.env.CONTACT_WEBHOOK_URL;
   if (webhook) {
     try {
