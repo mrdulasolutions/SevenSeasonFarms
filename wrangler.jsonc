@@ -4,6 +4,10 @@
   "main": ".open-next/worker.js",
   "compatibility_date": "2025-04-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // Custom domains (sevenseasonsfarm.com + www) are attached via the
+  // Cloudflare dashboard since adding them in code requires DNS-edit
+  // scopes that wrangler's OAuth login doesn't grant. Once attached they
+  // persist; deploys won't disturb them.
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
