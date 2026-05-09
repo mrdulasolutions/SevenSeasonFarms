@@ -31,12 +31,28 @@ export default function Home() {
             a whole lot of care. Welcome to our little corner of North Carolina.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-            <Link
-              href="/products"
-              className="inline-flex items-center justify-center rounded-full bg-terracotta px-7 py-3.5 text-sm font-semibold text-ivory shadow-lg shadow-black/20 transition hover:bg-terracotta-deep"
+            <a
+              href="https://www.locallygrown.app/seven-seasons-farm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-1.5 rounded-full bg-terracotta px-7 py-3.5 text-sm font-semibold text-ivory shadow-lg shadow-black/20 transition hover:bg-terracotta-deep"
             >
               Shop Fresh Milk
-            </Link>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden
+              >
+                <path d="M7 17L17 7" />
+                <path d="M8 7h9v9" />
+              </svg>
+            </a>
             <Link
               href="/our-story"
               className="inline-flex items-center justify-center rounded-full border border-ivory/40 px-7 py-3.5 text-sm font-semibold text-ivory transition hover:bg-ivory/10"
