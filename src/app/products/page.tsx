@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Eyebrow, Section } from "@/components/Section";
 import { ProductCarousel } from "@/components/ProductCarousel";
-import { PickupLocations } from "@/components/PickupLocations";
+import { PickupLocations, SHOP_URL } from "@/components/PickupLocations";
 import { ValueCalculator } from "@/components/ValueCalculator";
 import { Reviews } from "@/components/Reviews";
 
@@ -224,19 +224,40 @@ export default function ProductsPage() {
               </h3>
               <ul className="mt-3 space-y-2 text-ink-soft">
                 <li>
-                  <strong className="text-forest-deep">Call ahead.</strong>{" "}
+                  <strong className="text-forest-deep">Order online.</strong>{" "}
                   We&rsquo;re small and sell out fast.
                 </li>
                 <li>
-                  <strong className="text-forest-deep">Pick a pickup spot.</strong>{" "}
-                  On-farm or a Triangle drop point. We&rsquo;ll work out a
-                  schedule that fits.
+                  <strong className="text-forest-deep">Pick a pickup spot</strong>{" "}
+                  in the shop. On-farm or a Triangle drop point.
                 </li>
                 <li>
                   <strong className="text-forest-deep">We accept</strong> cash,
                   Cash App (preferred), and all major credit cards.
                 </li>
               </ul>
+              <a
+                href={SHOP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold uppercase tracking-[0.18em] text-terracotta hover:text-terracotta-deep"
+              >
+                Shop Online to Find a Location
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden
+                >
+                  <path d="M7 17L17 7" />
+                  <path d="M8 7h9v9" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>

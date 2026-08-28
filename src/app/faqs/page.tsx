@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Eyebrow, Section } from "@/components/Section";
-import { PickupLocations } from "@/components/PickupLocations";
+import { PickupLocations, SHOP_URL } from "@/components/PickupLocations";
 
 export const metadata = {
   title: "FAQs",
@@ -240,17 +240,33 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     a: (
       <>
         <p>
-          We do on-farm pickup plus drop points across the Triangle: Wake
-          Forest, Raleigh (North Hills), Cary, Youngsville, and Fuquay-Varina.
-          Saturday pickups happen at the Wake Forest Farmer&rsquo;s Market and
-          The Forks Cafeteria in Wake Forest. See the full schedule on the{" "}
-          <Link
-            href="/products#pickup"
-            className="text-terracotta underline hover:text-terracotta-deep"
+          Pickup is available on the farm and at drop points across the
+          Triangle. Choose a location and time when you order in our online
+          shop.
+        </p>
+        <p>
+          <a
+            href={SHOP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex items-center justify-center gap-1.5 rounded-full bg-terracotta px-6 py-3 text-sm font-semibold text-ivory no-underline transition hover:bg-terracotta-deep"
           >
-            Products page
-          </Link>{" "}
-          or call us to arrange something.
+            Shop Online to Find a Location
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden
+            >
+              <path d="M7 17L17 7" />
+              <path d="M8 7h9v9" />
+            </svg>
+          </a>
         </p>
       </>
     ),

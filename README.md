@@ -37,7 +37,7 @@ or set `CLOUDFLARE_API_TOKEN` as an env var.
 src/
 ├── app/              # App Router pages (home, our-story, products, faqs, consulting, contact)
 ├── components/       # Shared UI (header, footer, calculator, reviews, carousel, etc.)
-└── lib/              # Static data (pickup locations, reviews)
+└── lib/              # Static data (reviews)
 public/images/        # Brand photos and logo
 wrangler.jsonc        # Cloudflare Worker config
 open-next.config.ts   # OpenNext adapter config
@@ -47,8 +47,8 @@ open-next.config.ts   # OpenNext adapter config
 
 - **Brand tokens** live in [`src/app/globals.css`](src/app/globals.css)
   (`@theme` block) — forest green, cream, terracotta, wheat.
-- **Pickup locations & times** are edited in
-  [`src/lib/pickups.ts`](src/lib/pickups.ts).
+- **Pickup locations** are chosen in the online shop
+  ([locallygrown.app/seven-seasons-farm](https://www.locallygrown.app/seven-seasons-farm)).
 - **Reviews** live in [`src/lib/reviews.ts`](src/lib/reviews.ts).
 - **Calculator price assumptions** are constants at the top of
   [`src/components/ValueCalculator.tsx`](src/components/ValueCalculator.tsx).
